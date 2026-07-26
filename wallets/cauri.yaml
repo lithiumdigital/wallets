@@ -1,0 +1,72 @@
+name: "Cauri Wallet"
+wallet-name: cauri
+website: "https://cauri.cc"
+contact: "info@lithiumdigital.com"
+added: "2026-07-27"
+slack_party_scaling_channel_joined: false
+
+features:
+  # Wallet Type
+  wallet_model: [retail]
+  custody_model: self-custodial
+  form_factor: [browser]
+  deployment_model: [saas]
+
+  # Canton Coin
+  cc_support:
+    supported: true
+    proof: proofs/cauri/cauri-self-attestation.md#cc-support-cc_support
+    verified_by: []
+  two_step_cc_transfers:
+    supported: true
+    proof: proofs/cauri/cauri-self-attestation.md#two-step-cc-transfers-two_step_cc_transfers
+    verified_by: []
+  preapprovals:
+    supported: true
+    proof: proofs/cauri/cauri-self-attestation.md#pre-approvals-for-cc-preapprovals
+    verified_by: []
+
+  # Token Standard
+  cip_0056_transfer:
+    supported: true
+    proof: proofs/cauri/cauri-self-attestation.md#cip-0056-token-standard-transfer-support-cip_0056_transfer
+    verified_by: []
+  memo_tag_support:
+    supported: true
+    proof: proofs/cauri/cauri-self-attestation.md#memo-tag-support-for-transfers-to-omnibus-accounts-memo_tag_support
+    verified_by: []
+
+  # dApp Connectivity (CIP-103)
+  cip_0103_dapp_api:
+    supported: true
+    proof: proofs/cauri/cauri-self-attestation.md#cip-0103-dapp-api-support-cip_0103_dapp_api
+    verified_by: []
+  walletconnect_support:
+    supported: true
+    proof: proofs/cauri/cauri-self-attestation.md#wallet-connect-support-walletconnect_support
+    verified_by: []
+
+  # App Specific
+  registry_preapprovals:
+    supported: true
+    proof: proofs/cauri/cauri-self-attestation.md#pre-approvals-for-da-registry-issued-assets-registry_preapprovals
+    verified_by: []
+
+  # Party Specific
+  key_generation_method: "WebAuthn / passkey (Ed25519 via platform authenticator)"
+  key_recovery:
+    supported: true
+
+  # Network Relevant Features
+  utxo_merge_delegation:
+    supported: true
+    proof: proofs/cauri/cauri-self-attestation.md#utxo-merge-delegation-contract-enabled-utxo_merge_delegation
+    verified_by: []
+
+  # Wallet Capabilities
+  clear_signing:
+    supported: true
+    proof: proofs/cauri/cauri-self-attestation.md#clear-signing-clear_signing
+    verified_by: []
+  assets_supported: ["CC", "USDCx", "CBTC", "HANDL", "cBondObl1", "EDELx", "cETH"]
+  languages_supported: ["English"]
